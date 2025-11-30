@@ -23,4 +23,7 @@ app.get("/profile/:username/:age", function(req,res){
 app.listen(3000,function(){
     console.log("Its goging well");
 
+    console.log("i am fine")
+    
+
 });
