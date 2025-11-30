@@ -1,0 +1,30 @@
+ npm init -y , gives json called package.json
+install express
+dynamic rounting 
+how to get data  coming from frontend and backend route
+setting up parser for form, it's a json and urlencoded for form
+setting up from ejs for ejs pages, install ejs from npm, setup ejs as a view engine
+setting up pablic static files 
+
+dynamic routes - many times u see routes and only one part will be changed.
+like - /author/shushank
+       /author/golu
+       /author/goldy ... there comes dynamic routing that don't create many times.
+
+     -----------------  
+first goes the browser
+write url as per your choice
+and create your url route
+send res anything
+and make dynamic of this url, think of that which part is dynamic and marl :(colon) of that part before route.
+--------
+app.get("/profile/:username", function(req,res){
+    req.params.username
+    res.render("working"); 
+});
+
+app.get("/profile/:username/:age", function(req,res){
+    res.send(`Welcome, ${req.params.username} of age ${req.params.age}`);
+});
+
+req.params -  anything before colon says its dynamic
